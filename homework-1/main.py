@@ -2,7 +2,7 @@
 import psycopg2
 import csv
 
-with psycopg2.connect(host='localhost', database='north', user='postgres', password="alesar") as conn:
+with psycopg2.connect(host='localhost', database='north', user='postgres', password="") as conn:
     with conn.cursor() as cur:
         with open('north_data/employees_data.csv', 'r') as f:
             reader = csv.reader(f)
